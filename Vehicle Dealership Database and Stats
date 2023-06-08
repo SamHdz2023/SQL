@@ -1,0 +1,25 @@
+
+CREATE TABLE Vehiclelist (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO vehiclelist VALUES (1, "MUSTANG" , 20, 20000);
+INSERT INTO vehiclelist VALUES (2, "MERCEDES", 21, 35000);
+INSERT INTO vehiclelist VALUES (3, "BMW", 25, 40000);
+INSERT INTO vehiclelist VALUES (4, "AUDI", 15, 50000);
+INSERT INTO vehiclelist VALUES (5, "TESLA", 22, 60000);
+INSERT INTO vehiclelist VALUES (6, "CHEVROLET", 13, 80000);
+INSERT INTO vehiclelist VALUES (7, "VW", 27, 70000);
+INSERT INTO vehiclelist VALUES (8, "SILVERADO", 25, 85000);
+INSERT INTO vehiclelist VALUES (9, "HUMMER", 26, 106000);
+INSERT INTO vehiclelist VALUES (10, "CORVETT", 23, 87000);
+INSERT INTO vehiclelist VALUES (11, "HYUNDA", 19, 18000);
+INSERT INTO vehiclelist VALUES (12, "HONDA", 11, 17000);
+INSERT INTO vehiclelist VALUES (13, "MITSUBICHI", 9, 19000);
+INSERT INTO vehiclelist VALUES (14, "NISSAN", 14, 17000);
+INSERT INTO vehiclelist VALUES (15, "ION", 30, 7000);
+
+SELECT * FROM vehiclelist
+
+ORDER BY PRICE;
+
+SELECT SUM (quantity) FROM vehiclelist;
+
